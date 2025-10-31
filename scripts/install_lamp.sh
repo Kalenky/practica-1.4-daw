@@ -16,6 +16,10 @@ apt install php libapache2-mod-php- php-mysql -y
 # Copiamos el archivo de configuraicópn de Apache
 cp ../conf/000-default.conf /etc/apache2/sites-available
 
+# Habilitamos el módulo de rewrite
+a2enmod rewrite
+
+
 # Reiniciar el servicio apache
 systemctl restart apache2
 
